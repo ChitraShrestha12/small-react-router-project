@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #f0f0f0;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+p{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+a:hover{
+    color: #007bff;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 74px);
+}

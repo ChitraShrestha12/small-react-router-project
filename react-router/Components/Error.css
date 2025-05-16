@@ -1,0 +1,100 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .error-content {
+    max-width: 600px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  .error-number {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .number {
+    font-size: 120px;
+    font-weight: 900;
+    color: #2c3e50;
+    text-shadow: 4px 4px 0px #bdc3c7;
+    margin: 0 10px;
+    animation: bounce 1.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .number:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .number:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .error-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #34495e;
+  }
+  
+  .error-message {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .error-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .error-button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .error-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .number {
+      font-size: 80px;
+    }
+    
+    .error-title {
+      font-size: 24px;
+    }
+    
+    .error-message {
+      font-size: 16px;
+    }
+    
+    .error-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
